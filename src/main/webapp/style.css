@@ -1,0 +1,84 @@
+
+@charset "UTF-8";
+
+body{
+background:url("night_city.jpg");
+background-size:100%;
+background-repeat:no-repeat;
+background-color:black;
+}
+
+#main {
+color: white;
+position:relative;
+display:block;
+width:75%;
+top:27%;
+left:12.5%;
+border-radius:5px;
+background:linear-gradient(to right, rgba(51,51,51,0.1), rgba(156,156,156,0.4));
+margin-bottom: 50px;
+}
+
+#btn{
+float: left;
+}
+
+/*Main tabs:*/
+
+#tab2, #tab3 {position: fixed; }
+
+.menu1 > a,
+.menu1 #tab2:target ~ a:nth-of-type(1),
+.menu1 #tab3:target ~ a:nth-of-type(1),
+.menu1 > div {color: white; padding: 5px; border: 1px solid #aaa; background-color: rgba(150, 150, 150, 1);}
+
+.menu1 > a { line-height: 28px; background: #fff; text-decoration: none; background-color: rgba(150, 150, 150, 1); color: white;}
+
+#tab2,
+#tab3,
+.menu1 > div,
+.menu1 #tab2:target ~ div:nth-of-type(1),
+.menu1 #tab3:target ~ div:nth-of-type(1) {color: white; display: none;}
+
+.menu1 > div:nth-of-type(1),
+.menu1 #tab2:target ~ div:nth-of-type(2),
+.menu1 #tab3:target ~ div:nth-of-type(3) {color: white;  display: block; background-color: rgba(150, 150, 150, 1);}
+
+.menu1 > a:nth-of-type(1),
+.menu1 #tab2:target ~ a:nth-of-type(2),
+.menu1 #tab3:target ~ a:nth-of-type(3) { border-bottom: 2px solid #fff; background-color: rgba(111, 111, 111, 1); color: white;}
+
+/*End of tabs*/
+
+/*Buttons*/
+
+.grey {
+  display: inline-block;
+  color: white;
+  font-weight: 700;
+  text-decoration: none;
+  user-select: none;
+  padding: .5em 2em;
+  outline: none;
+  border: 2px solid;
+  border-radius: 1px;
+  transition: 0.2s;
+  background-color: rgba(111, 111, 111, 1);
+}
+.grey:hover { background: rgba(255,255,255,.2); }
+.grey:active { background: color: rgba(64, 64, 64, 1);}
+
+/*End of buttons*/
+
+/*Tables*/
+
+table {color: white; width: 100%;}
+tr:hover {background-color: #000000;}
+tr:nth-child(even) {background-color: #303030;}
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/*End of tables*/

@@ -1,0 +1,56 @@
+<html>
+<head>
+    <link>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://sites.google.com/site/wildtigerrr/home/style.css">
+    <title>Airport Terminal</title>
+
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+
+<div id="main">
+
+    <div id="btn">
+        <form action="/AeroProject">
+            <input class="grey" type="submit" value="На главную">
+        </form>
+    </div>
+
+    <div>
+        <form action="servletUse/" method="POST">
+            <input class="grey" type="submit" value="Rewrite database">
+            <input type="hidden" name="btnname" value="rwdb">
+        </form>
+        Price
+    </div>
+
+    <div class="menu1">
+        <br id="tab2"/><br id="tab3"/>
+        <a href="#tab1">Price</a><a href="#tab2">Flights</a><a href="#tab3">Passengers</a>
+        <div>
+            <form action="servletUse/" method="POST">
+                <input class="grey" type="submit" value="Renew pricelist">
+                <input type="hidden" name="btnname" value="price">
+            </form>
+        </div>
+        <div>
+            <div id="display"></div>
+            <p>Введите имя пользователя: <input type="text" id="someid" name="someid"></p>
+            <input type='button' value='Покажись!' onClick='mode()'/>
+        </div>
+        <div id='content'>
+            <form name='postform' action="servletUse/" method="POST">
+                <p>Type username: <input type="text" name="sometext"></p>
+                <input type="submit" value="Send">
+                <input type="hidden" name="btnname" value="TesterButton">
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
