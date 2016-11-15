@@ -23,6 +23,7 @@ public class StringOperations {
         }
     }
 
+
     public static String getSerial() {
         char[] arr = {'С', 'Н', 'К', 'В', 'Т', 'М'};
         String ser = "";

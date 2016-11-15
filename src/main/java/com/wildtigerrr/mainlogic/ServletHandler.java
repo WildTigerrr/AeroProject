@@ -25,9 +25,11 @@ public class ServletHandler {
         String strRealPath = req.getServletContext().getRealPath("");
         System.out.println("Rel path: " + strRelPath);
         System.out.println("Real path: " + strRealPath);
+        String style = FilesInteraction.getFileInString("style1.txt");
         try {
             switch (name) {
                 case "search":
+                    style = FilesInteraction.getFileInString("style3.txt");
                     passengers = DBInteraction.findPassengers(req);
                     passengersif = "true";
                     break;
@@ -60,7 +62,6 @@ public class ServletHandler {
         String head = FilesInteraction.getFileInString("head.txt");
         String bottom = FilesInteraction.getFileInString("bottom.txt");
         String head1 = FilesInteraction.getFileInString("head1.txt");
-        String style = FilesInteraction.getFileInString("style.txt");
         String head2 = FilesInteraction.getFileInString("head2.txt");
         return head1 + style + head2 + price + flights + passengers + test + bottom;
 

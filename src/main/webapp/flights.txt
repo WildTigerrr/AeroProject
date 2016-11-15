@@ -1,4 +1,5 @@
-<div>
-    <input class="grey" type='button' value='Search'>
-    <input type="hidden" name="btnname" value="flights">
-</div>
+
+    <div>
+        <input class="grey" type='button' value='Search'>
+        <input type="hidden" name="btnname" value="flights">
+    </div>
